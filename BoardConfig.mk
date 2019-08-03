@@ -121,3 +121,6 @@ TW_EXTRA_LANGUAGES := true
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Installer
+TW_INCLUDE_REPACKTOOLS := true
