@@ -109,8 +109,6 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
-# MTP will not work until we update it to support ffs
-TW_EXCLUDE_MTP := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true
@@ -123,3 +121,6 @@ TW_EXTRA_LANGUAGES := true
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Installer
+TW_INCLUDE_REPACKTOOLS := true
